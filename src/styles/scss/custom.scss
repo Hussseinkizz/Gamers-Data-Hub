@@ -1,0 +1,47 @@
+// some few off the shelf rules
+$ts: 1px 1px 10px rgba(#2a3540, 0.4); /* text-shadow */
+$gray-100: #f3f4f6;
+
+body {
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  color: #111827;
+background: rgb(239,246,255);
+background: linear-gradient(90deg, rgba(239,246,255,1) 0%, rgba(243,244,246,1) 50%, rgba(249,250,251,1) 100%);
+}
+
+// pseudo settings & we could change these surely...
+
+html::-webkit-scrollbar {
+  width: 12px;
+  height: 6px;
+  background-color: #F3F4F6;
+}
+
+
+html::-webkit-scrollbar-track {
+    // border-radius: 3px;
+    background-color: transparent;
+  }
+  
+html::-webkit-scrollbar-thumb {
+    // border-radius: 12px;
+    height: 6px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #D1D5DB;
+    border: 2px solid #F3F4F6;
+
+    &:hover {
+      background-color: #9CA3AF;
+    }
+  }
+    
+::selection {
+  background-color: $gray-100;
+  text-shadow: $ts;
+  border-radius: 4px;
+}
+
+// :-webkit-tap-highlight-color {
+//   color: rgba(0, 0, 0, 0.2);
+// }

@@ -1,0 +1,470 @@
+/* Welcome To Tie & Dye CSS, The First Cool Tricks CSS Library! 
+== Version 1.5.5 - 9 Dec 2020 Setup ==
+>> Here comes the best CSS tricks, make sure to check our bit sized docs!
+> Quick Navigation:
+- config settings, around line 260;
+- color paletes, around line 340;
+- tricks and mixins, around line 440;
+*/
+/*
+* This Is The Full Tie And Dye -- Version 1.5.5 - 9 Dec 2020 Setup.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+html {
+  line-height: 1.15;
+  scrollbar-color: light;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp, pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 1 */
+  line-height: 1.5;
+}
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+hr {
+  border-top-width: 1px;
+}
+
+img {
+  border-style: solid;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #9ca3af;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #9ca3af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9ca3af;
+}
+
+button,
+[role=button] {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button, input, optgroup, select, textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+pre, code, kbd, samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object, picture {
+  display: block;
+  vertical-align: middle;
+}
+
+img, picture, video {
+  aspect-ratio: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+*These Are The Configuration Settings Of Tie & Dye! 
+*/
+/* max-width */
+/* border-radius-button */
+/* border-radius-button */
+/* border-radius-medium */
+/* border-radius-circle */
+/* text-shadow */
+/* box-shadow-light */
+/* box-shadow-lighter */
+/* box-shadow-dark */
+/* 
+*These Are The Colors Paletes Of Tie & Dye! 
+*/
+/* 
+*These Are The Tricks Of Tie & Dye! 
+*/
+* {
+  transition: all 2s ease-in linear;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none !important;
+  font-size: calc(100% + .12vw);
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+  height: 6px;
+  background-color: #eff1f5;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  height: 6px;
+  background-color: #9CA3AF;
+  border: 2px solid #eff1f5;
+}
+
+::-moz-selection {
+  background-color: #F3F4F6;
+  text-shadow: 1px 1px 10px rgba(42, 53, 64, 0.4);
+  border-radius: 4px;
+}
+
+::selection {
+  background-color: #F3F4F6;
+  text-shadow: 1px 1px 10px rgba(42, 53, 64, 0.4);
+  border-radius: 4px;
+}
+
+:-webkit-tap-highlight-color {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+button .ripple {
+  border-radius: 50%;
+  background: #676ed7;
+  position: absolute;
+  transform: scale(0);
+  -webkit-animation: ripple 0.6s linear;
+          animation: ripple 0.6s linear;
+}
+
+@-webkit-keyframes ripple {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+/* we will soon have our dependency libs here but untill then, thanks for the love */
+/* login Page form CSS */
+#login-form {
+  justify-content: center;
+  border: 0;
+  margin: auto;
+  min-width: 0px;
+  padding: 4px;
+}
+
+#login-form input[type=text],
+#login-form input[type=password],
+#login-form button[type=submit] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 15px;
+  min-width: 0%;
+  padding: 0;
+  width: 100%;
+}
+
+#login-form input[type=text],
+#login-form input[type=password] {
+  width: 100%;
+  border: 0.1px solid white;
+  background: #F9FAFB;
+  border-radius: 10px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  text-align: center;
+}
+
+#login-form input[type=text]:hover,
+#login-form input[type=password]:hover {
+  transition: border-color 0.3s ease-in-out;
+  border: 0.1px solid rgba(245, 219, 255, 0.4);
+}
+
+#login-form textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#login-form button[type=submit] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 1rem;
+  background: #00a8f3;
+  color: #f6f6f6;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+#login-form button[type=submit]:hover {
+  background: #0eb4ff;
+  color: #e9e9e9;
+  transform: scale(0.98);
+  transition: all 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#login-form button[type=submit]:active {
+  background: #954194;
+  box-shadow: none;
+  border: 0;
+  outline: 0;
+}
+
+.forgot-password {
+  text-align: center;
+  white-space: nowrap;
+  font-size: calc(14px);
+}
+.forgot-password-link {
+  color: #14171a;
+}
+.forgot-password-link:hover {
+  color: #00a8f3;
+  transition: all 0.3s ease-in-out;
+}
+
+#login-form input:focus,
+#login-form textarea:focus {
+  outline: 0;
+  border: 0.1px solid rgba(246, 246, 246, 0.5);
+}
+
+::-webkit-input-placeholder {
+  color: #F3F4F6;
+}
+
+:-moz-placeholder {
+  color: #F3F4F6;
+}
+
+::-moz-placeholder {
+  color: #F3F4F6;
+}
+
+:-ms-input-placeholder {
+  color: #F3F4F6;
+}
+
+#login {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  color: text-color;
+}
+
+.logo {
+  width: clamp(6em,12em,18em);
+  height: auto;
+}

@@ -1,0 +1,108 @@
+/* 
+* Here you can write your custom over-rides! 
+( they will replace the prior styles )
+*/
+
+// Default Color scheme settings //
+$default-color: #fff;
+$main-color: #f6f6f6;
+$main-black: #2a3540;
+$default-gray: #0e131d;
+$primary-color: #f5dbff;
+$secondary-color: #954194;
+$accent-color: #3f48cc;
+$text-color: rgb(20, 23, 26);
+$text-color-2: rgb(101, 119, 134);
+$shadow-color: #3c485842;
+
+/* 
+* Beta Hacks ( these are proposed for the next version and are changeable )
+*/
+
+* {
+  transition: all 2s ease-in linear; // check out this css!
+  scroll-behavior: smooth;
+}
+
+* + * {
+  margin-top: 1em; // combinator by kevin powell
+}
+
+* > * {
+  margin-top: 0; // fixing the combinator glitch
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  max-width: 100%;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+// pseudo settings & you can change these surely...
+
+html::-webkit-scrollbar {
+  width: 12px;
+  height: 6px;
+  background-color: #eff1f5;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  height: 6px;
+  background-color: #9ca3af;
+  border: 2px solid #eff1f5;
+}
+
+::selection {
+  background-color: $gray-100;
+  text-shadow: $ts;
+  border-radius: 4px;
+}
+
+:-webkit-tap-highlight-color {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+// font-size settings
+$big-font: calc(100% + 1vw);
+$medium-font: calc(100% + 0.5vw);
+$normal-font: calc(90% + 0.1vw);
+$small-font: calc(80% + 0.4vw);
+$smaller-font: calc(80%);
+$smallest-font: calc(12px);
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  // overflow-y: scroll;
+  overflow: hidden;
+  outline: none !important;
+  font-size: $normal-font;
+}
+
+button {
+  outline: none !important;
+}
+
+$vibrant-grad: linear-gradient(139deg, #fb8817, #ff4b01, #c12127, #e02aff);
+
+@mixin border-gradient($alignment, $breadth, $gradient) {
+  border-#{$alignment}: $breadth solid;
+  border-image: $gradient 3;
+}

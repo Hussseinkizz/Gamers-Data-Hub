@@ -1,0 +1,180 @@
+{
+  "data": {
+    "maternalRates": [
+      {
+        "month": 1,
+        "rate": 11.2
+      },
+      {
+        "month": 2,
+        "rate": 18.6
+      },
+      {
+        "month": 3,
+        "rate": 12
+      },
+      {
+        "month": 4,
+        "rate": 7.2
+      },
+      {
+        "month": 5,
+        "rate": 53.4
+      },
+      {
+        "month": 6,
+        "rate": 49.8
+      },
+      {
+        "month": 7,
+        "rate": 45.2
+      },
+      {
+        "month": 8,
+        "rate": 51.4
+      },
+      {
+        "month": 9,
+        "rate": 41
+      },
+      {
+        "month": 10,
+        "rate": 24
+      },
+      {
+        "month": 11,
+        "rate": 54.4
+      },
+      {
+        "month": 12,
+        "rate": 6.2
+      }
+    ],
+    "pregnancyRates": [
+      {
+        "range": "15-19",
+        "rate": 27
+      },
+      {
+        "range": "20-24",
+        "rate": 25
+      },
+      {
+        "range": "25-29",
+        "rate": 19
+      },
+      {
+        "range": "30-34",
+        "rate": 27
+      },
+      {
+        "range": "35-39",
+        "rate": 25
+      },
+      {
+        "range": "40-44",
+        "rate": 28
+      },
+      {
+        "range": "45-49",
+        "rate": 20
+      },
+      {
+        "range": "50-54",
+        "rate": 16
+      },
+      {
+        "range": "55-59",
+        "rate": 19
+      },
+      {
+        "range": "60-64",
+        "rate": 14
+      },
+      {
+        "range": "65-69",
+        "rate": 12
+      },
+      {
+        "range": "70-74",
+        "rate": 11
+      }
+    ],
+    "infantRates": [
+      {
+        "vht": "14",
+        "percentage": 14
+      },
+      {
+        "vht": "59",
+        "percentage": 24
+      },
+      {
+        "vht": "10",
+        "percentage": 22
+      },
+      {
+        "vht": "15",
+        "percentage": 18
+      },
+      {
+        "vht": "20",
+        "percentage": 16
+      },
+      {
+        "vht": "25",
+        "percentage": 6
+      }
+    ],
+    "registrationRates": [
+      {
+        "month": 1,
+        "rate": 12.2
+      },
+      {
+        "month": 2,
+        "rate": 16.6
+      },
+      {
+        "month": 3,
+        "rate": 12
+      },
+      {
+        "month": 4,
+        "rate": 27.2
+      },
+      {
+        "month": 5,
+        "rate": 53.4
+      },
+      {
+        "month": 6,
+        "rate": 59.8
+      },
+      {
+        "month": 7,
+        "rate": 45.2
+      },
+      {
+        "month": 8,
+        "rate": 51.4
+      },
+      {
+        "month": 9,
+        "rate": 41
+      },
+      {
+        "month": 10,
+        "rate": 24
+      },
+      {
+        "month": 11,
+        "rate": 54.4
+      },
+      {
+        "month": 12,
+        "rate": 62.2
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Roustel';
+  src: local('Roustel'),
+      url('./files/Roustel.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: local('OpenSans-ExtraBold'),
+      url('./files/OpenSans-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DroidSans';
+  src: local('DroidSans'),
+      url('./files/DroidSans.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LibreFranklin';
+  src: local('LibreFranklin-Regular'),
+      url('./files/LibreFranklin-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: local('Larsseit-ExtraBold'),
+      url('./files/Larsseit-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins-Regular'),
+      url('./files/Poppins-Regular.otf') format('opentype');
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: local('Poppins-Medium'),
+      url('./files/Poppins-Medium.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Black';
+  src: local('Poppins-Black'),
+      url('./files/Poppins-Black.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: local('Poppins-Bold'),
+      url('./files/Poppins-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins-Extra';
+  src: local('Poppins-ExtraBold'),
+      url('./files/Poppins-ExtraBold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Arial-Rounded';
+  src: local('Arial-RoundedBold'),
+  url('./files/Arial-RoundedBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Made-Dillan';
+  src: local('Made-Dillan.otf'),
+  url('./files/Made-Dillan.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}

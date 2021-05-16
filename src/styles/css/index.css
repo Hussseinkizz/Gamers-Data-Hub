@@ -1,0 +1,742 @@
+/* Welcome To Tie & Dye CSS, The First Cool Tricks CSS Library! 
+== Version 1.5.5 - 9 Dec 2020 Setup ==
+>> Here comes the best CSS tricks, make sure to check our bit sized docs!
+> Quick Navigation:
+- config settings, around line 260;
+- color paletes, around line 340;
+- tricks and mixins, around line 440;
+*/
+/*
+* This Is The Full Tie And Dye -- Version 1.5.5 - 9 Dec 2020 Setup.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+}
+
+html {
+  line-height: 1.15;
+  scrollbar-color: light;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp, pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+blockquote, dl, dd, h1, h2, h3, h4, h5, h6, hr, figure, p, pre {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 1 */
+  line-height: 1.5;
+}
+
+body {
+  font-family: inherit;
+  line-height: inherit;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+hr {
+  border-top-width: 1px;
+}
+
+img {
+  border-style: solid;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #9ca3af;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #9ca3af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #9ca3af;
+}
+
+button,
+[role=button] {
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button, input, optgroup, select, textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+pre, code, kbd, samp {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object, picture {
+  display: block;
+  vertical-align: middle;
+}
+
+img, picture, video {
+  aspect-ratio: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 
+*These Are The Configuration Settings Of Tie & Dye! 
+*/
+/* max-width */
+/* border-radius-button */
+/* border-radius-button */
+/* border-radius-medium */
+/* border-radius-circle */
+/* text-shadow */
+/* box-shadow-light */
+/* box-shadow-lighter */
+/* box-shadow-dark */
+/* 
+*These Are The Colors Paletes Of Tie & Dye! 
+*/
+/* 
+*These Are The Tricks Of Tie & Dye! 
+*/
+* {
+  transition: all 2s ease-in linear;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none !important;
+  font-size: calc(100% + .12vw);
+}
+
+html::-webkit-scrollbar {
+  width: 12px;
+  height: 6px;
+  background-color: #eff1f5;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 12px;
+  height: 6px;
+  background-color: #9CA3AF;
+  border: 2px solid #eff1f5;
+}
+
+::-moz-selection {
+  background-color: #F3F4F6;
+  text-shadow: 1px 1px 10px rgba(42, 53, 64, 0.4);
+  border-radius: 4px;
+}
+
+::selection {
+  background-color: #F3F4F6;
+  text-shadow: 1px 1px 10px rgba(42, 53, 64, 0.4);
+  border-radius: 4px;
+}
+
+:-webkit-tap-highlight-color {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+button .ripple {
+  border-radius: 50%;
+  background: #676ed7;
+  position: absolute;
+  transform: scale(0);
+  -webkit-animation: ripple 0.6s linear;
+          animation: ripple 0.6s linear;
+}
+
+@-webkit-keyframes ripple {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+/* we will soon have our dependency libs here but untill then, thanks for the love */
+/* In case we want to change font sizes or selection colors!
+$smallest-font: calc(14px);
+$smaller-font: calc(95%);
+$small-font: calc(100% + .6vw);
+$normal-font: calc(100% + .12vw);
+$medium-font: calc(100% + .5vw);
+$big-font: calc(100% + 2.5vw);
+
+::selection {
+  background-color: $blue-100;
+  text-shadow: $ts;
+  border-radius: 4px;
+  //color: $gray-c;
+} */
+* {
+  transition: all 2s ease-in linear;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none !important;
+  font-size: calc(100% + .12vw);
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  flex: 1 1 100%;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-gap: 0.5rem;
+  color: #262626;
+  background: #eaedf1;
+  grid-template-columns: minmax(12rem, 14vw) 1fr;
+}
+
+aside {
+  width: 100%;
+  height: 100%;
+  background: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  color: #262626;
+  background: #F9FAFB;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-rows: minmax(3rem, 4vw) 1fr;
+}
+
+.liner {
+  width: 95%;
+  height: 3px;
+  margin: 5px;
+  margin-top: 0px;
+  border-radius: 10px;
+  background: #cadffe;
+}
+
+.sidebar-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar-header {
+  width: 100%;
+  height: 7%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sidebar-content {
+  width: 100%;
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  padding-bottom: 1rem;
+}
+
+.logo {
+  width: 52px;
+  min-height: auto;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: clac(calc(100% + .6vw)-2px);
+  letter-spacing: 1px;
+  color: #bb0d0d;
+}
+
+.sidebar-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.sidebar-list-item {
+  width: 100%;
+  display: flex;
+  margin-bottom: 0.95rem;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 500;
+  font-size: calc(95%);
+  text-transform: capitalize;
+  color: #0359d7;
+}
+.sidebar-list-item:hover, .sidebar-list-item:active, .sidebar-list-item:focus {
+  transition: all 0.3s ease-in-out;
+  color: #333333;
+  background: #eaedf1;
+}
+
+.list-text {
+  margin-left: 1rem;
+}
+
+.list-icon {
+  margin-left: 0.5rem;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header {
+  width: 100%;
+  height: 8%;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #262626;
+  border-bottom: 0.5rem solid #e6e6e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #F9FAFB;
+}
+
+.main-content {
+  width: 100%;
+  height: 92%;
+  padding: 0.5rem;
+}
+
+.expansion-control-icon {
+  width: 16px;
+  min-height: auto;
+}
+.expansion-control-icon:hover, .expansion-control-icon:active, .expansion-control-icon:focus {
+  transition: all 0.3s ease-in-out;
+  color: #6f879f;
+}
+
+.header-title {
+  font-weight: 500;
+  font-size: calc(95%);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-actions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header-actions > span {
+  margin-left: 1rem;
+  color: #F9FAFB;
+  padding: 8px;
+  border-radius: 50%;
+  background: #333333;
+}
+.header-actions > span:hover, .header-actions > span:active, .header-actions > span:focus {
+  transition: all 0.3s ease-in-out;
+  color: #6f879f;
+  background: #2e2e2e;
+}
+
+.header-actions-icon {
+  width: 15px;
+  min-height: auto;
+}
+
+/* Author comments:
+* This is modified for simple use, real application is in _temp.scss partial it's self...
+*/
+.main-content {
+  padding: 4rem;
+  display: grid;
+  grid-gap: 1rem;
+  place-items: center;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.content-container-top, .content-container-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.content-container-bottom {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-info-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.user-info-top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content-container-bottom:nth-child(2) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.username-span {
+  margin-left: 0.5rem;
+  width: 100px;
+  height: 1em;
+  border-radius: 27px;
+  background: #eaedf1;
+  background-image: linear-gradient(90deg, #f3f5f7, #eaedf1 90px, #f3f5f7 150px);
+  background-size: 600px;
+  -webkit-animation: shimmering 1.25s linear infinite;
+          animation: shimmering 1.25s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  transition: all 1s ease-in-out;
+  will-change: position;
+  pointer-events: none;
+}
+@-webkit-keyframes shimmering {
+  0% {
+    background-position: -300px;
+  }
+  100% {
+    background-position: 300px;
+  }
+}
+@keyframes shimmering {
+  0% {
+    background-position: -300px;
+  }
+  100% {
+    background-position: 300px;
+  }
+}
+
+.icon-span {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #eaedf1;
+  background-image: linear-gradient(90deg, #f3f5f7, #eaedf1 90px, #f3f5f7 150px);
+  background-size: 600px;
+  -webkit-animation: shimmering 1.25s linear infinite;
+          animation: shimmering 1.25s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  transition: all 1s ease-in-out;
+  will-change: position;
+  pointer-events: none;
+}
+@keyframes shimmering {
+  0% {
+    background-position: -300px;
+  }
+  100% {
+    background-position: 300px;
+  }
+}
+
+.subtitle-div {
+  width: 300px;
+  height: 1em;
+  border-radius: 27px;
+  margin-top: 0.5rem;
+  background: #eaedf1;
+  background-image: linear-gradient(90deg, #f3f5f7, #eaedf1 90px, #f3f5f7 150px);
+  background-size: 600px;
+  -webkit-animation: shimmering 1.25s linear infinite;
+          animation: shimmering 1.25s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  transition: all 1s ease-in-out;
+  will-change: position;
+  pointer-events: none;
+}
+@keyframes shimmering {
+  0% {
+    background-position: -300px;
+  }
+  100% {
+    background-position: 300px;
+  }
+}
+
+.card-component {
+  width: 15rem;
+  height: 10rem;
+  background: #e6e6e6;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  background: #eaedf1;
+  background-image: linear-gradient(90deg, #f3f5f7, #eaedf1 90px, #f3f5f7 150px);
+  background-size: 600px;
+  -webkit-animation: shimmering 1.25s linear infinite;
+          animation: shimmering 1.25s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  transition: all 1s ease-in-out;
+  will-change: position;
+  pointer-events: none;
+}
+@keyframes shimmering {
+  0% {
+    background-position: -300px;
+  }
+  100% {
+    background-position: 300px;
+  }
+}
+
+.user-photo-holder {
+  display: grid;
+  place-items: center;
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  background: #eaedf1;
+  background-image: linear-gradient(90deg, #f3f5f7, #eaedf1 90px, #f3f5f7 150px);
+  background-size: 600px;
+  -webkit-animation: shimmering 1.25s linear infinite;
+          animation: shimmering 1.25s linear infinite;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  transition: all 1s ease-in-out;
+  will-change: position;
+  pointer-events: none;
+}
+@keyframes shimmering {
+  0% {
+    background-position: -300px;
+  }
+  100% {
+    background-position: 300px;
+  }
+}
+
+/* Author comments: 
+* should surely find a way to handle ".content-holder" psuedo states with js ...
+ */

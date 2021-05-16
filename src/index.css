@@ -1,0 +1,27 @@
+/* tailwind css directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-gradient {
+  @apply bg-gradient-to-t from-blue-500 to-blue-300 text-gray-100
+}
+
+.app-bg {
+  @apply bg-gradient-to-r from-blue-50 to-gray-50 text-gray-900
+}
+
+.plain-button {
+  @apply px-2 py-1 tracking-wider text-gray-100 transition-all duration-200 ease-in-out transform  shadow-md bg-gradient-to-t from-blue-500 to-blue-300 hover:from-blue-400 hover:to-blue-300 hover:text-gray-200 focus:outline-none hover:shadow-lg focus:from-blue-300 focus:to-blue-200 focus:text-gray-100 rounded-2xl focus:scale-95 flex space-x-2 place-items-center
+}
+
+.action-button {
+  @apply px-8 py-2 font-semibold tracking-wider  text-gray-100 transition-all duration-200 ease-in-out transform  shadow-md bg-gradient-to-t from-blue-500 to-blue-300 hover:from-blue-400 hover:to-blue-300 hover:text-gray-200 focus:outline-none hover:shadow-lg focus:from-blue-300 focus:to-blue-200 focus:text-gray-100 rounded-2xl focus:scale-95
+  flex place-items-center
+}
+
+.data-category-button {
+  @apply px-3 py-2 rounded-2xl bg-white font-semibold shadow-md border-2 md:px-4 lg:px-6
+  md:py-3 lg:py-4 hover:bg-gray-100 hover:shadow-lg hover:text-blue-900 text-gray-500 focus:outline-none
+}
