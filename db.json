@@ -1,5 +1,102 @@
 {
   "data": {
+    "categories" : [
+      {
+        "id": 1,
+        "categoryName": "birth related data",
+        "subCategories": [
+          "home deliveries",
+          "facility deliveries",
+          "deaths"
+        ]
+      },
+      {
+        "id": 2,
+        "categoryName": "death related data",
+        "subCategories": [
+          "accidents",
+          "disease",
+          "birth",
+          "pregnancy",
+          "unknown"
+        ]
+      },
+      {
+        "id": 3,
+        "categoryName": "child health data",
+        "subCategories": [
+          "malaria",
+          "pneumonia",
+          "diarrhea",
+          "immunization"
+        ]
+      },
+      {
+        "id": 4,
+        "categoryName": "maternal health data",
+        "subCategories": [
+          "pregnancies",
+          "ANC",
+          "PNC"
+        ]
+      },
+      {
+        "id": 5,
+        "categoryName": "community stock tracker",
+        "subCategories": [
+          "medicines",
+          "equipment"
+        ]
+      },
+      {
+        "id": 6,
+        "categoryName": "Visitation schedule",
+        "subCategories": [
+          "ANC",
+          "immunization",
+          "reviews"
+        ]
+      },
+      {
+        "id": 7,
+        "categoryName": "disease outbreak data",
+        "subCategories": [
+          "COVID-19",
+          "cholera",
+          "measles",
+          "dysentry",
+          "ebola"
+        ]
+      },
+      {
+        "id": 8,
+        "categoryName": "chronic care tracker",
+        "subCategories": [
+          "HIV",
+          "TB",
+          "hypertension",
+          "diabetes"
+        ]
+      },
+      {
+        "id": 9,
+        "categoryName": "personnel performance",
+        "subCategories": [
+          "VHTs",
+          "CHWs",
+          "Transporters",
+          "health workers"
+        ]
+      },
+      {
+        "id": 10,
+        "categoryName": "insurance coverage",
+        "subCategories": [
+          "households",
+          "pregnant women"
+        ]
+      }
+    ],
     "maternalRates": [
       {
         "month": 1,

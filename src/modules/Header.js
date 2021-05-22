@@ -12,11 +12,13 @@ const Header = () => {
           <Link to="/">
             <div className="flex space-x-2 align-middle text-lg">
               <span>
-                <BsIcons.BsBarChartFill className="w-6 h-6" />
+                <BsIcons.BsBarChartFill className="w-6 h-6 text-blue-500" />
               </span>
               <span className="space-x-2 font-semibold">
-                <span>Gamers Data</span>
-                <span className="text-gray-300 p-1 bg-gray-800 rounded-lg">
+                <span className="tracking-wider text-blue-500 custom-font">
+                  GAMERS Data
+                </span>
+                <span className="text-blue-300 p-1 bg-gray-800 rounded-lg">
                   Hub
                 </span>
               </span>

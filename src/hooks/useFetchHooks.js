@@ -4,6 +4,9 @@ import axios from 'axios';
 
 // fetching data with axios with ES7 - no query mutations
 // use local host port 8080 for offline api testing...
+//* 💻local:  http://localhost:8080/data,
+//* 🌐 online: https://my-json-server.typicode.com/Hussseinkizz/Gamers-Data-Hub/data
+
 const getData = async () => {
   const { data } = await axios.get(
     'https://my-json-server.typicode.com/Hussseinkizz/Gamers-Data-Hub/data'
@@ -18,13 +21,14 @@ export function useGetData() {
 }
 
 // fetching data with axios with ES7 + mutable params
-// const getData = async (query) => {
+// //? look into json server docs, for nested resource path?
+// const getDataByParam = async (query) => {
 //   const { data } = await axios.get(`http://localhost:8080/${query}`);
 // return data;
 // };
 
 // ⚛ hook with params
-// export function useGetData1(queryString) {
-//   useDebugValue(getData ?? 'loading...')
-//   return useQuery(["receive-data", queryString], () => getData(queryString));
+// export function useGetDataByParam(queryString) {
+//   useDebugValue(getDataByParam ?? 'loading...')
+//   return useQuery(["receive-data", queryString], () => getDataByParam(queryString));
 // }

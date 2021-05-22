@@ -6,6 +6,10 @@ body {
   background: linear-gradient(90deg, #eff6ff 0%, #f3f4f6 50%, #f9fafb 100%);
 }
 
+.custom-font {
+  font-family: "OpenSans" Tahoma, Verdana, Segoe, sans-serif;
+}
+
 html::-webkit-scrollbar {
   width: 12px;
   height: 6px;
@@ -13,6 +17,7 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-track {
+  border-radius: 12px;
   background-color: transparent;
 }
 

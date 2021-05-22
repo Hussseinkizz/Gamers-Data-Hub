@@ -1,14 +1,14 @@
 export const initialState = {
-  pageHeightFull: false
+  selectedCategory: 'birth related data'
 };
 
 export const reducer = (state, action) => {
   switch (action.payload) {
 
-    case 'SET_PAGE_HEIGHT':
+    case 'SET_SELECTED_CATEGORY':
       return {
         ...state,
-        pageHeightFull: !state.pageHeightFull
+        selectedCategory: action.selection
       };
 
     default:
@@ -16,4 +16,3 @@ export const reducer = (state, action) => {
   }
 };
 
-//! Above implementation isn't complete!

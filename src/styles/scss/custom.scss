@@ -9,6 +9,10 @@ background: rgb(239,246,255);
 background: linear-gradient(90deg, rgba(239,246,255,1) 0%, rgba(243,244,246,1) 50%, rgba(249,250,251,1) 100%);
 }
 
+.custom-font {
+  font-family: 'OpenSans' Tahoma, Verdana, Segoe, sans-serif;
+}
+
 // pseudo settings & we could change these surely...
 
 html::-webkit-scrollbar {
@@ -19,7 +23,7 @@ html::-webkit-scrollbar {
 
 
 html::-webkit-scrollbar-track {
-    // border-radius: 3px;
+    border-radius: 12px;
     background-color: transparent;
   }
   
