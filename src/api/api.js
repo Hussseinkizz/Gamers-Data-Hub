@@ -29,6 +29,46 @@
 //   }
 // }
 
+
+
+// Mortality data is in this format
+  //  [
+  //     {
+  //       serial_number: '1',
+  //       deceased_age: '25',
+  //       death_cause: 'Child Birth',
+  //       sickness: 'Pneumonia',
+  //       death_desc: 'Unknown',
+  //       death_date: '2021-05-05',
+  //       time_stamp: '2021-05-20 12:19:29',
+  //       chwID: 'CHWID12',
+  //       audit_status: 'complete',
+  //       village_code: '301'
+  //     },
+  //     {
+  //       serial_number: '2',
+  //       deceased_age: '60',
+  //       death_cause: 'Accident',
+  //       sickness: 'Unknown',
+  //       death_desc: 'Unknown',
+  //       death_date: '2021-05-19',
+  //       time_stamp: '2021-05-28 12:20:02',
+  //       chwID: 'CHWID12',
+  //       audit_status: 'complete',
+  //       village_code: '301'
+  //     },
+  //     {
+  //       deceased_age: '15',
+  //       death_cause: 'Child Birth',
+  //       sickness: 'Unknown',
+  //       death_desc: 'Unknown',
+  //       death_date: '2021-05-13',
+  //       time_stamp: '2021-05-14 12:20:20',
+  //       chwID: 'CHWID12',
+  //       audit_status: 'complete',
+  //       village_code: '301'
+  //     },
+  //  ]
 export const getMortalities = async (villagecode = null, limit = 20) => {
 	let url =
 		villagecode == null

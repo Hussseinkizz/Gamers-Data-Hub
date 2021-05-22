@@ -1,11 +1,21 @@
+import { getMortalities } from '../api/api'
+
 
 export default class Mortalities {
-    constructor (mortalities) {
+    constructor (mortalities) { // Data from the mortalities API here
         this.mortalities = mortalities
         this.sickness = []
     }
 
+    // Format of data obtained from running this method
+    // [
+    //     { label: 'Pneumonia', count: 3 },
+    //     { label: 'Malaria', count: 7 },
+    //     { label: 'Unknown', count: 3 },
+    //     { label: 'Diarrhea', count: 4 }
+    // ]
     sicknesses = () => {
+
         let p = 0, u = 0, m = 0, d = 0
         for (let mortality of this.mortalities) {
             if (mortality.sickness == "Pneumonia") p++
