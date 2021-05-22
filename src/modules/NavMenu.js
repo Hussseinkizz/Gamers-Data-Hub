@@ -1,26 +1,32 @@
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import * as BiIcons from 'react-icons/bi';
-import { useHistory, useLocation } from "react-router-dom";
-
+import { useHistory, useLocation } from 'react-router-dom';
 
 //todo: should include more logic for routes
 
 export default function NavMenu() {
-
-  let history = useHistory()
-  let location = useLocation()
+  let history = useHistory();
+  let location = useLocation();
 
   const handleForward = () => {
-    if (location.pathname === '/categories') {
+    if (location.pathname === '/') {
+      history.push('/categories');
+    } else if (location.pathname === '/categories') {
+      history.push('/sub-categories');
+    } else if (location.pathname === '/sub-categories') {
       history.push('/national-overview');
-    } else history.push('/categories');
+    }
   };
 
   const handleBack = () => {
     if (location.pathname === '/national-overview') {
+      history.push('/sub-categories');
+    } else if (location.pathname === '/sub-categories') {
       history.push('/categories');
-    } else history.push('/');
+    } else if (location.pathname === '/categories') {
+      history.push('/');
+    }
   };
 
   return (
