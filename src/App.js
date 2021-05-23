@@ -1,7 +1,7 @@
 import Header from "./modules/Header";
 import { DataCategories, Home, NationalOverview, Page404 } from "./Pages";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+import Test from './lib/test'
 //? work around the spinner? 🤔 
 
 const App = () => {
@@ -16,6 +16,7 @@ const App = () => {
         <main className="pt-20 px-4 w-full h-full">
           <Switch>
             <Route path="/" exact component={Home} />
+            <Route path="/test" exact component={Test} />
             <Route path="/categories" exact component={DataCategories} />
             <Route path="/national-overview" exact component={NationalOverview} />
             <Route path="*" exact component={Page404} />
