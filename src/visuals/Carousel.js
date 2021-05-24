@@ -2,7 +2,7 @@ import { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 import ReactSwipe from 'react-swipe';
-import BarChartComponent from './BarChartComponent';
+import DeathBarChartComponent from './BarChartComponent';
 import PieChartComponent from './PieChartComponent';
 
 //todo: make carousel keyboard navigable,😦
@@ -33,7 +33,7 @@ const Carousel = ({ BarChartData1, BarChartData2, PieChartData3 }) => {
             <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900">
               Mortality Rates per Disease
             </h1>
-            <BarChartComponent
+            <DeathBarChartComponent
               data={BarChartData1}
               Xdata="name"
               Ydata="count"
@@ -42,18 +42,18 @@ const Carousel = ({ BarChartData1, BarChartData2, PieChartData3 }) => {
           </div>
           <div className="w-full bg-white grid place-items-center rounded-md p-3 md:p5 lg:p-8">
             <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900">
-              Chart Of Pregnant Mothers Per Age Group
+              Mortality Rates Per Age Groups
             </h1>
-            <BarChartComponent
+            <DeathBarChartComponent
               data={BarChartData2}
-              Xdata="name"
+              Xdata="group"
               Ydata="count"
               Format={false}
             />
           </div>
           <div className="w-full bg-white grid place-items-center rounded-md p-3 md:p5 lg:p-8">
             <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900">
-              Chart Of House Holds Registrations Per VHT
+              Mortality Rates Per Village
             </h1>
             <PieChartComponent
               data={PieChartData3}

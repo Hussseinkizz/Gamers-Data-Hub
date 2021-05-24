@@ -17,7 +17,7 @@ import {getMonthNameByOrder, TooltipStyles } from "../utils/helpers";
  * @return {*} 
  */
 
-export default function BarChartComponent({ data, Xdata, Ydata, Format }) {
+export default function DeathBarChartComponent({ data, Xdata, Ydata, Format }) {
   
   return (
     <>
