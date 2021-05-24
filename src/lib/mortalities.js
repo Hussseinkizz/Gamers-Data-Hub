@@ -1,4 +1,4 @@
-export const sickness = (arr) => {
+export const sickness = (arr = []) => {
 	let s = [],
 		p = 0,
 		u = 0,
