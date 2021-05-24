@@ -13,7 +13,7 @@ import { useHistory } from 'react-router-dom';
  * @return {*}
  */ 
 
-const HomeUI = ({ sData, aData }) => {
+const HomeUI = ({ sData, aData, hData }) => {
   let history = useHistory();
 
   return (
@@ -23,7 +23,7 @@ const HomeUI = ({ sData, aData }) => {
         <Carousel
           BarChartData1={sData}
           BarChartData2={aData}
-          PieChartData3={sData}
+          PieChartData3={hData}
         />
       </Fade>
       {/* HOME UI TABLE */}

@@ -2,8 +2,7 @@ import { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 import ReactSwipe from 'react-swipe';
-import DeathBarChartComponent from './BarChartComponent';
-import PieChartComponent from './PieChartComponent';
+import BarChartComponent from './BarChartComponent';
 
 //todo: make carousel keyboard navigable,😦
 
@@ -33,10 +32,11 @@ const Carousel = ({ BarChartData1, BarChartData2, PieChartData3 }) => {
             <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900">
               Mortality Rates per Disease
             </h1>
-            <DeathBarChartComponent
+            <BarChartComponent
               data={BarChartData1}
               Xdata="name"
               Ydata="count"
+              unit="deaths"
               Format={false}
             />
           </div>
@@ -44,21 +44,23 @@ const Carousel = ({ BarChartData1, BarChartData2, PieChartData3 }) => {
             <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900">
               Mortality Rates Per Age Groups
             </h1>
-            <DeathBarChartComponent
+            <BarChartComponent
               data={BarChartData2}
               Xdata="group"
               Ydata="count"
+              unit="deaths"
               Format={false}
             />
           </div>
           <div className="w-full bg-white grid place-items-center rounded-md p-3 md:p5 lg:p-8">
             <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900">
-              Mortality Rates Per Village
+              Per Age group household Population
             </h1>
-            <PieChartComponent
+            <BarChartComponent
               data={PieChartData3}
-              Xdata="name"
-              Ydata="count"
+              Xdata="label"
+              Ydata="value"
+              unit="people"
               Format={false}
             />
           </div>

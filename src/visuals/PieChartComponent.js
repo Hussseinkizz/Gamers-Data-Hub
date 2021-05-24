@@ -10,7 +10,7 @@ import { PieColors, renderCustomizedLabel, TooltipStyles } from "../utils/helper
  * @return {*} 
  */
 
-export default function PieChartComponent({ data, Xdata , Ydata }) {
+export default function HouseholdPieChartComponent({ data, Xdata , Ydata }) {
   return (
     <>
       <ResponsiveContainer width="50%" height={300} >
@@ -18,7 +18,7 @@ export default function PieChartComponent({ data, Xdata , Ydata }) {
           <Tooltip
             cursor={false}
             contentStyle={TooltipStyles}
-            formatter={(value, name) => [`${value} deaths`, `${name}`]}
+            formatter={(value, name) => [`${value} people`, `${name}`]}
           />
   
           <Pie

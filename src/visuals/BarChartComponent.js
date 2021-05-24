@@ -17,7 +17,7 @@ import {getMonthNameByOrder, TooltipStyles } from "../utils/helpers";
  * @return {*} 
  */
 
-export default function DeathBarChartComponent({ data, Xdata, Ydata, Format }) {
+export default function BarChartComponent({ data, Xdata, Ydata, Format, unit }) {
   
   return (
     <>
@@ -47,8 +47,8 @@ export default function DeathBarChartComponent({ data, Xdata, Ydata, Format }) {
           />
           <Bar
             dataKey={Ydata}
-            unit=" deaths"
-            name="Deaths"
+            unit={' ' + unit}
+            name={unit}
             fill="url(#chartGradient)"
           />
         </BarChart>
