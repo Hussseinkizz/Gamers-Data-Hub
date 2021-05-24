@@ -11,19 +11,19 @@ import { useHistory } from 'react-router-dom';
  * Fade is used for smooth components revealing effects,
  * @param {*} { data }
  * @return {*}
- */
+ */ 
 
 const HomeUI = ({ data }) => {
-    let history = useHistory();
+  let history = useHistory();
 
   return (
     <section className="w-full">
       {/* HOME UI CAROUSEL */}
       <Fade top>
         <Carousel
-          BarChartData1={data.maternalRates}
-          BarChartData2={data.pregnancyRates}
-          BarChartData3={data.registrationRates}
+          BarChartData1={data}
+          BarChartData2={data}
+          PieChartData3={data}
         />
       </Fade>
       {/* HOME UI TABLE */}

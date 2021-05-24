@@ -6,7 +6,8 @@ import axios from 'axios';
 // use local host port 8080 for offline api testing...
 const getData = async () => {
   const { data } = await axios.get(
-    'https://my-json-server.typicode.com/Hussseinkizz/Gamers-Data-Hub/data'
+    //'https://my-json-server.typicode.com/Hussseinkizz/Gamers-Data-Hub/data'
+    'http://gamers.doctorsarch.org/api/v1/mortalities/?token=a211089fbffc6d2179a17639137476575f614746&limit=20'
   );
   return data;
 };

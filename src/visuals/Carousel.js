@@ -3,6 +3,7 @@ import * as FaIcons from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 import ReactSwipe from 'react-swipe';
 import BarChartComponent from './BarChartComponent';
+import PieChartComponent from './PieChartComponent';
 
 //todo: make carousel keyboard navigable,😦
 
@@ -13,7 +14,7 @@ import BarChartComponent from './BarChartComponent';
  * @return {*} 
  */
 
-const Carousel = ({ BarChartData1, BarChartData2, BarChartData3 }) => {
+const Carousel = ({ BarChartData1, BarChartData2, PieChartData3 }) => {
   const [isMoving, setIsMoving] = useState(true);
   let reactSwipeEl;
 
@@ -30,13 +31,13 @@ const Carousel = ({ BarChartData1, BarChartData2, BarChartData3 }) => {
         >
           <div className="w-full bg-white grid place-items-center rounded-md p-3 md:p5 lg:p-8">
             <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900">
-              Chart Of Pregnant Mothers Per Month
+              Mortality Rates per Disease
             </h1>
             <BarChartComponent
               data={BarChartData1}
-              Xdata="month"
-              Ydata="rate"
-              Format
+              Xdata="name"
+              Ydata="count"
+              Format={false}
             />
           </div>
           <div className="w-full bg-white grid place-items-center rounded-md p-3 md:p5 lg:p-8">
@@ -45,8 +46,8 @@ const Carousel = ({ BarChartData1, BarChartData2, BarChartData3 }) => {
             </h1>
             <BarChartComponent
               data={BarChartData2}
-              Xdata="range"
-              Ydata="rate"
+              Xdata="name"
+              Ydata="count"
               Format={false}
             />
           </div>
@@ -54,11 +55,11 @@ const Carousel = ({ BarChartData1, BarChartData2, BarChartData3 }) => {
             <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900">
               Chart Of House Holds Registrations Per VHT
             </h1>
-            <BarChartComponent
-              data={BarChartData3}
-              Xdata="month"
-              Ydata="rate"
-              Format
+            <PieChartComponent
+              data={PieChartData3}
+              Xdata="name"
+              Ydata="count"
+              Format={false}
             />
           </div>
         </ReactSwipe>

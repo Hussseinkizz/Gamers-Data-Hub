@@ -39,7 +39,7 @@ export default function BarChartComponent({ data, Xdata, Ydata, Format }) {
             tickLine={false}
             tickFormatter={Format ? getMonthNameByOrder : false}
           />
-          <YAxis unit="%" width={35} axisLine={false} tickLine={false} />
+          <YAxis unit="" width={35} axisLine={false} tickLine={false} />
           <Tooltip
             cursor={false}
             contentStyle={TooltipStyles}
@@ -47,8 +47,8 @@ export default function BarChartComponent({ data, Xdata, Ydata, Format }) {
           />
           <Bar
             dataKey={Ydata}
-            unit="%"
-            name="Rate"
+            unit=" deaths"
+            name="Deaths"
             fill="url(#chartGradient)"
           />
         </BarChart>

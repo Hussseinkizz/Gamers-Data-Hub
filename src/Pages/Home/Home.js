@@ -2,6 +2,7 @@
 import { useGetData } from '../../hooks/useFetchHooks';
 import { ErrorUI, FetchUI, LoaderUI } from '../../modules/StateModules';
 import HomeUI from './HomeUI';
+import {sickness} from '../../lib/mortalities'
 
 // smart component --> Home
 
@@ -9,7 +10,7 @@ import HomeUI from './HomeUI';
 const Home = () => {
   // const [queryString, setQueryString] = useState('maternalRates');
   const { status, data, error, isFetching } = useGetData();
-
+  let d = sickness(data)
   // const onLoadHandler = () => {
   // setQueryString('maternalRates')
   // console.log(queryString)
@@ -23,7 +24,7 @@ const Home = () => {
       return <ErrorUI error={error} />;
 
     case 'success':
-      return <HomeUI data={data} />;
+      return <HomeUI data={d} />;
 
     default:
       return <FetchUI fetching={isFetching} />;

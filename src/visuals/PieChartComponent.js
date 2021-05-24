@@ -18,9 +18,9 @@ export default function PieChartComponent({ data, Xdata , Ydata }) {
           <Tooltip
             cursor={false}
             contentStyle={TooltipStyles}
-            formatter={(value, name) => [`${value}%`, `${Xdata} - ${name}`]}
+            formatter={(value, name) => [`${value} deaths`, `${name}`]}
           />
-
+  
           <Pie
             dataKey= {Ydata}
             data={data}
@@ -28,13 +28,13 @@ export default function PieChartComponent({ data, Xdata , Ydata }) {
             innerRadius={40}
             name= {Ydata}
             nameKey= {Xdata}
-            unit="%"
+            unit="deaths"
             label={renderCustomizedLabel}
             labelLine={false}
           >
             {data.map((entry, index) => (
               <Cell
-                key={`cell-${index}`}
+                key={`cell-${index}`} 
                 fill={PieColors[index % PieColors.length]}
               />
             ))}
