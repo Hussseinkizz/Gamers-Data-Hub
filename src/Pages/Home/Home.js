@@ -10,10 +10,11 @@ import { households } from '../../lib/households'
 
 const Home = () => {
   // const [queryString, setQueryString] = useState('maternalRates');
-  const { status, data, error, isFetching } = useGetData();
+  let { status, data, error, isFetching } = useGetData();
   let d = sickness(data)
   let a = ageGroups(data)
   let h = households()
+
 
   // const onLoadHandler = () => {
   // setQueryString('maternalRates')
@@ -28,7 +29,7 @@ const Home = () => {
       return <ErrorUI error={error} />;
 
     case 'success':
-      return <HomeUI sData={d} aData={a} hData={h}/>;
+      return <HomeUI sData={d} aData={a} hData={h} />;
 
     default:
       return <FetchUI fetching={isFetching} />;

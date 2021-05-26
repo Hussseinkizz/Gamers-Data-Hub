@@ -1,10 +1,10 @@
-export const sickness = (arr = []) => {
+export const sickness = (arr = {mortalities: []}) => {
 	let s = [],
 		p = 0,
 		u = 0,
 		m = 0,
 		d = 0;
-	for (let a of arr) {
+	for (let a of arr.mortalities) {
 		switch (a.sickness) {
 			case "Pneumonia":
 				p++;
@@ -23,13 +23,13 @@ export const sickness = (arr = []) => {
 
 	s.push({ name: "Pneumonia", count: p });
 	s.push({ name: "Malaria", count: m });
-	s.push({ name: "Unknown", count: u });
 	s.push({ name: "Diarrhea", count: d });
+	s.push({ name: "Unknown", count: u });
 
 	return s;
 };
 
-export const ageGroups = (arr = []) => {
+export const ageGroups = (arr = {mortalities: []}) => {
 	let s = [
 		{ group: "0 - 5", count: 0 },
 		{ group: "5 - 10", count: 0 },
@@ -40,7 +40,7 @@ export const ageGroups = (arr = []) => {
 		{ group: "> 50", count: 0 },
 	];
 
-	for (let a of arr) {
+	for (let a of arr.mortalities) {
 		if (a.deceased_age <= 5) {
 			s[0]["count"]++;
 			continue;

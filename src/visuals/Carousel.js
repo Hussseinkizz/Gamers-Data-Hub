@@ -3,6 +3,7 @@ import * as FaIcons from 'react-icons/fa';
 import Fade from 'react-reveal/Fade';
 import ReactSwipe from 'react-swipe';
 import BarChartComponent from './BarChartComponent';
+import PieChartComponent from './PieChartComponent'
 
 //todo: make carousel keyboard navigable,😦
 
@@ -13,7 +14,7 @@ import BarChartComponent from './BarChartComponent';
  * @return {*} 
  */
 
-const Carousel = ({ BarChartData1, BarChartData2, PieChartData3 }) => {
+const Carousel = ({ BarChartData1, BarChartData2, BarChartData3 }) => {
   const [isMoving, setIsMoving] = useState(true);
   let reactSwipeEl;
 
@@ -57,13 +58,14 @@ const Carousel = ({ BarChartData1, BarChartData2, PieChartData3 }) => {
               Per Age group household Population
             </h1>
             <BarChartComponent
-              data={PieChartData3}
+              data={BarChartData3}
               Xdata="label"
               Ydata="value"
               unit="people"
               Format={false}
             />
           </div>
+          
         </ReactSwipe>
         <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900 flex place-items-center justify-center mt-4 space-x-6 outline-none mb-32">
           <Fade left>

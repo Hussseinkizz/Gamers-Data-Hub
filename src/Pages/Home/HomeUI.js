@@ -23,7 +23,7 @@ const HomeUI = ({ sData, aData, hData }) => {
         <Carousel
           BarChartData1={sData}
           BarChartData2={aData}
-          PieChartData3={hData}
+          BarChartData3={hData}
         />
       </Fade>
       {/* HOME UI TABLE */}
