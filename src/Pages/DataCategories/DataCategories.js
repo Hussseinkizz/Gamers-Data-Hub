@@ -1,8 +1,10 @@
 import Fade from 'react-reveal/Fade';
+import { useHistory } from 'react-router-dom'
 
 //todo: useHistroy()
 
 const DataCategories = () => {
+  let history = useHistory()
   return (
     <section className="grid w-full mx-auto  place-items-center  md:w-3/4 lg:w-4/5 md:text-lg lg:text-xl">
       <Fade bottom>

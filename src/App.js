@@ -13,7 +13,7 @@ const App = () => {
         className="cursor-pointer pb-24 z-auto relative"
       >
         <Header />
-        <main className="pt-20 px-4 w-full h-full">
+        <main className="pt-5 px-0 w-full h-full">
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/test" exact component={Test} />

@@ -4,12 +4,12 @@ import { ErrorUI, FetchUI, LoaderUI } from '../../modules/StateModules';
 import HomeUI from './HomeUI';
 import {sickness, ageGroups} from '../../lib/mortalities'
 import { households } from '../../lib/households'
-
 // smart component --> Home
 
 
 const Home = () => {
   // const [queryString, setQueryString] = useState('maternalRates');
+
   let { status, data, error, isFetching } = useGetData();
   let d = sickness(data)
   let a = ageGroups(data)

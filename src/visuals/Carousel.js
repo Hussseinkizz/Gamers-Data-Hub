@@ -67,7 +67,7 @@ const Carousel = ({ BarChartData1, BarChartData2, BarChartData3 }) => {
           </div>
           
         </ReactSwipe>
-        <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900 flex place-items-center justify-center mt-4 space-x-6 outline-none mb-32">
+        <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900 flex place-items-center justify-center mt-4 space-x-6 outline-none mb-10">
           <Fade left>
             <button
               onClick={() => reactSwipeEl.prev()}
