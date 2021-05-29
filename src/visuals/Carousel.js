@@ -31,13 +31,13 @@ const Carousel = ({ BarChartData1, BarChartData2, BarChartData3 }) => {
         >
           <div className="w-full bg-white grid place-items-center rounded-md p-3 md:p5 lg:p-8">
             <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900">
-              Mortality Rates per Disease
+              Births per location
             </h1>
             <BarChartComponent
               data={BarChartData1}
-              Xdata="name"
+              Xdata="label"
               Ydata="count"
-              unit="deaths"
+              unit="mothers"
               Format={false}
             />
           </div>
@@ -47,9 +47,9 @@ const Carousel = ({ BarChartData1, BarChartData2, BarChartData3 }) => {
             </h1>
             <BarChartComponent
               data={BarChartData2}
-              Xdata="group"
-              Ydata="count"
-              unit="deaths"
+              Xdata="parish"
+              Ydata="population"
+              unit="people"
               Format={false}
             />
           </div>
@@ -59,15 +59,15 @@ const Carousel = ({ BarChartData1, BarChartData2, BarChartData3 }) => {
             </h1>
             <BarChartComponent
               data={BarChartData3}
-              Xdata="label"
-              Ydata="value"
+              Xdata="year"
+              Ydata="population"
               unit="people"
               Format={false}
             />
           </div>
           
         </ReactSwipe>
-        <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900 flex place-items-center justify-center mt-4 space-x-6 outline-none mb-10">
+        <h1 className="text-center text-base md:text-lg lg:text-xl w-full font-bold my-2 text-gray-900 flex place-items-center justify-center mt-4 space-x-6 outline-none mb-32">
           <Fade left>
             <button
               onClick={() => reactSwipeEl.prev()}

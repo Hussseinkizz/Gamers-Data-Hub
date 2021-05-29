@@ -18,7 +18,7 @@ const HomeUI = ({ sData, aData, hData }) => {
 
   return (
     <section className="w-screen">
-      <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+      <div className="">
         <Fade top>
           <Carousel
             BarChartData1={sData}
@@ -26,27 +26,6 @@ const HomeUI = ({ sData, aData, hData }) => {
             BarChartData3={hData}
           />
         </Fade>
-        <Fade top>
-        <Carousel
-          BarChartData1={sData}
-          BarChartData2={aData}
-          BarChartData3={hData}
-        />
-      </Fade>
-      <Fade top>
-        <Carousel
-          BarChartData1={sData}
-          BarChartData2={aData}
-          BarChartData3={hData}
-        />
-      </Fade>
-      <Fade top>
-        <Carousel
-          BarChartData1={sData}
-          BarChartData2={aData}
-          BarChartData3={hData}
-        />
-      </Fade>
       </div>
 
       <Fade bottom>

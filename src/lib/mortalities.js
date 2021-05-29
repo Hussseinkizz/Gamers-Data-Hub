@@ -1,4 +1,4 @@
-export const sickness = (arr = {mortalities: []}) => {
+export const sickness = (arr = { mortalities: [] }) => {
 	let s = [],
 		p = 0,
 		u = 0,
@@ -21,15 +21,17 @@ export const sickness = (arr = {mortalities: []}) => {
 		}
 	}
 
-	s.push({ name: "Pneumonia", count: p });
-	s.push({ name: "Malaria", count: m });
-	s.push({ name: "Diarrhea", count: d });
-	s.push({ name: "Unknown", count: u });
+	s.push(
+		{ name: "Pneumonia", count: p },
+		{ name: "Malaria", count: m },
+		{ name: "Diarrhea", count: d },
+		{ name: "Unknown", count: u }
+	);
 
-	return s;
+	return s; // Mortality count per sickness
 };
 
-export const ageGroups = (arr = {mortalities: []}) => {
+export const ageGroups = (arr = { mortalities: [] }) => {
 	let s = [
 		{ group: "0 - 5", count: 0 },
 		{ group: "5 - 10", count: 0 },
@@ -63,5 +65,5 @@ export const ageGroups = (arr = {mortalities: []}) => {
 		}
 	}
 
-	return s
+	return s; // Mortality count per age group
 };

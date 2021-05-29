@@ -18,6 +18,26 @@ export function useGetData() {
 	return useQuery("receive-data-all", getData);
 }
 
+export function usePopulation() {
+	return useQuery("population", () => axios.get("http://gamers.doctorsarch.org/api/v1/population/?token=a211089fbffc6d2179a17639137476575f614746"))
+}
+
+export function useBirthData() {
+	return useQuery("birthdata", () => axios.get("http://gamers.doctorsarch.org/api/v1/birthdata/?token=a211089fbffc6d2179a17639137476575f614746"))
+}
+
+export function useANCData() {
+	return useQuery("anc", () => axios.get("http://gamers.doctorsarch.org/api/v1/anc/?token=a211089fbffc6d2179a17639137476575f614746"))
+}
+
+export function usePNCData() {
+	return useQuery("pnc", () => axios.get("http://gamers.doctorsarch.org/api/v1/pnc/?token=a211089fbffc6d2179a17639137476575f614746"))
+}
+
+export function useStockData() {
+	return useQuery("stock_status", () => axios.get("http://gamers.doctorsarch.org/api/v1/stock/?token=a211089fbffc6d2179a17639137476575f614746"))
+}
+
 
 // fetching data with axios with ES7 + mutable params
 // const getData = async (query) => {
