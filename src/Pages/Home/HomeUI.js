@@ -1,7 +1,7 @@
 import Carousel from '../../visuals/Carousel';
-import Table from '../../visuals/Table';
 import Fade from 'react-reveal/Fade';
 import { useHistory } from 'react-router-dom';
+import TestTable from '../../lib/TestTable';
 
 // sub smart component --> Home UI
 
@@ -13,23 +13,22 @@ import { useHistory } from 'react-router-dom';
  * @return {*}
  */ 
 
-const HomeUI = ({ sData, aData, hData }) => {
+const HomeUI = ({ data, tableData }) => {
   let history = useHistory();
+
 
   return (
     <section className="w-screen">
       <div className="">
         <Fade top>
           <Carousel
-            BarChartData1={sData}
-            BarChartData2={aData}
-            BarChartData3={hData}
+            BarChartsData={data}
           />
         </Fade>
       </div>
 
       <Fade bottom>
-        <Table />
+        <TestTable pncsData={tableData}/>
       </Fade>
 
       <section className="grid mx-auto text-xs place-items-center md:text-sm md:w-3/4 lg:text-base lg:w-4/5">
