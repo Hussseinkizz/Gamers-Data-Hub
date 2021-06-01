@@ -1,7 +1,7 @@
 export default function Table() {
   return (
     // TABLE CONTAINER
-      <section className="grid w-full mx-auto text-xs rounded-md shadow-lg place-items-center md:text-sm md:w-3/4 lg:text-base lg:w-4/5 mb-24">
+      <section className="grid w-full mx-auto text-xs rounded-md shadow-lg place-items-center md:text-sm md:w-4/5 lg:text-base lg:w-11/12 mb-24">
         {/* TABLE HEADER / TITLE */}
         <h1 className="flex justify-center w-full py-2 text-sm font-bold text-center border-gray-300 md:text-base lg:text-lg bg-gradient rounded-t-sm">
           Treatment Data Summary Of Under 5 Years Children

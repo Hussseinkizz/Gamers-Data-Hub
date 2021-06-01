@@ -20,7 +20,7 @@ const Carousel = ({ BarChartData1, BarChartData2, BarChartData3 }) => {
   return (
     <>
         <ReactSwipe
-          className="carousel mx-auto w-full text-sm md:text-base md:w-3/4 lg:text-lg lg:w-4/5  rounded-md shadow-lg"
+          className="carousel mx-auto w-full text-sm md:text-base md:w-4/5 lg:text-lg lg:w-11/12  rounded-md shadow-lg"
           swipeOptions={{
             continuous: { isMoving },
             speed: 600,
